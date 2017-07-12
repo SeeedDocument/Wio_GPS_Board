@@ -57,40 +57,42 @@ We have prepared everything, the last thing we need is your creative projects, s
 
 ## Specification
 
-| Item|Function|Value|
-|--------------|-------------------------------------|-------|
-|Microcontroller |Processor|ATSAMD21G18A-MU, ARM Cortex-M0+, 48MHz|
-||Flash Memory|256KB|
-||SRAM|32KB|
-||Operating Voltage|3.3V|
-||DC Current per I/O Pin|7 mA|
-||Clock Speed	|48 MHz|
-|GSM/GPRS|GSM|850/900/1800/1900MHz, Class 4 (2W @850/900MHz), Class 1 (1W @1800/1900MHz)|
-|||AT Command: GSM 07.07, 07.05 and enhanced AT Command|
-|||Low Power Consumption: 1.2mA@DRX=5|
-||GPRS|GPRS Multi-slot Class 12: Down to 85.6kbps, Up to 85.6kbps|
-|||Protocol: TCP/UDP/FTP/HTTP/PPP/SSL|
-||SMS|Peer to Peer Message, SMS broadcast, Text and PDU mode|
-||Audio|Echo cancellation, Noise elimination|
-||Bluetooth|Bluetooth 3.0: SPP, HFP-AG|
-|GNSS|System|GPS L1 1575.42MHz, BeiDou B1 1561.10MHz|
-||Precision|<2.5 m CEP|
-||Technology|EASY/LOCUS/AlwaysLocate/EPO/GLP/AIC|
-|Peripheral|Grove|2 x Grove Digital Port|
-|||2 x Analog Port|
-|||1 x UART||||1 x I2C|
-||Antenna|GSM Antenna|
-|||Bluetooth Antenna||||GNSS Antenna|
-||Others|USB: Power supply and upload program|
-|||JST 1.0 connecter for battery|
-|||3.5mm Audio Jack|
-|||GSM Power Button, Reset Button|
-|||1 x User RGB LED SK6812|
-|||Speaker Interface|
-|||Nano SIM and TF card 2 in 1 socket|
-|Size|Length|54.7mm|
-||Width|48.2mm|
-||Weight||
+| Item            | Function                              | Value                                                                      |
+| --------------  | ------------------------------------- | -------                                                                    |
+| Microcontroller | Processor                             | ATSAMD21G18A-MU, ARM Cortex-M0+, 48MHz                                     |
+|                 | Flash Memory                          | 256KB                                                                      |
+|                 | SRAM                                  | 32KB                                                                       |
+|                 | Operating Voltage                     | 3.3V                                                                       |
+|                 | DC Current per I/O Pin                | 7 mA                                                                       |
+|                 | Clock Speed                           | 48 MHz                                                                     |
+| GSM/GPRS        | GSM                                   | 850/900/1800/1900MHz, Class 4 (2W @850/900MHz), Class 1 (1W @1800/1900MHz) |
+|                 |                                       | AT Command: GSM 07.07, 07.05 and enhanced AT Command                       |
+|                 |                                       | Low Power Consumption: 1.2mA@DRX=5                                         |
+|                 | GPRS                                  | GPRS Multi-slot Class 12: Down to 85.6kbps, Up to 85.6kbps                 |
+|                 |                                       | Protocol: TCP/UDP/FTP/HTTP/PPP/SSL                                         |
+|                 | SMS                                   | Peer to Peer Message, SMS broadcast, Text and PDU mode                     |
+|                 | Audio                                 | Echo cancellation, Noise elimination                                       |
+|                 | Bluetooth                             | Bluetooth 3.0: SPP, HFP-AG                                                 |
+| GNSS            | System                                | GPS L1 1575.42MHz, BeiDou B1 1561.10MHz                                    |
+|                 | Precision                             | <2.5 m CEP                                                                 |
+|                 | Technology                            | EASY/LOCUS/AlwaysLocate/EPO/GLP/AIC                                        |
+| Peripheral      | Grove                                 | 2 x Grove Digital Port                                                     |
+|                 |                                       | 2 x Analog Port                                                            |
+|                 |                                       | 1 x UART                                                                   |
+|                 |                                       | 1 x I2C                                                                    |
+|                 | Antenna                               | GSM Antenna                                                                |
+|                 |                                       | Bluetooth Antenna                                                          |
+|                 |                                       | GNSS Antenna                                                               |
+|                 | Others                                | USB: Power supply and upload program                                       |
+|                 |                                       | JST 1.0 connecter for battery                                              |
+|                 |                                       | 3.5mm Audio Jack                                                           |
+|                 |                                       | GSM Power Button, Reset Button                                             |
+|                 |                                       | 1 x User RGB LED SK6812                                                    |
+|                 |                                       | Speaker Interface                                                          |
+|                 |                                       | Nano SIM and TF card 2 in 1 socket                                         |
+| Size            | Length                                | 54.7mm                                                                     |
+|                 | Width                                 | 48.2mm                                                                     |
+|                 | Weight                                |                                                                            |
 
 
 ## Application Ideas
@@ -337,7 +339,7 @@ The following example shows how to read sms messages on WIO GPS Board. Nano SIM 
 Open your Arduino IDE and click on **File > Examples > MC20\_GPS\_Traker > MC20\_SMSRead** to open the sketch or copy the blow code:
 
 
- ```c
+```c
 #include "MC20_Common.h"
 #include "MC20_Arduino_Interface.h"
 
@@ -390,7 +392,7 @@ void loop() {
   }
   
 }
- ```
+```
 
 ### Bluetooth Connection
 
